@@ -241,7 +241,7 @@ class PremiumPage extends StatelessWidget {
       ],
     );
     bool enableSubscriptionAboutBanner =
-        (getPlatform(ignoreEmulation: true) == PlatformOS.isAndroid &&
+        (getPlatform(ignoreEmulation: false) == PlatformOS.isAndroid &&
             appStateSettings["purchaseID"] != productIDs["lifetime"]);
     return Column(
       children: [
